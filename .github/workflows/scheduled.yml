@@ -1,0 +1,11 @@
+on:
+  schedule:
+     - cron: "0 0 * * * "
+jobs:
+  daily-task:
+    runs-on: ubnutu-latest
+    steps:
+      - name: print message
+        run: echo "running the scheuled task"
+      
+          
