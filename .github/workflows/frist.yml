@@ -1,0 +1,21 @@
+name: frist github action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  frist-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: welcome
+        run: echo "hello from github"
+
+      - name: show current user
+        run: whoami
+
+      - name: show current dir
+        run: pwd
+        
