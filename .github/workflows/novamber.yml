@@ -1,0 +1,13 @@
+name: daily task
+
+on:
+  schedule:
+    # Runs every day at midnight UTC (00:01)
+    - cron: '1 0 * * *'
+
+jobs:
+  run-daily-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run automation
+        run: echo "daily automation"
