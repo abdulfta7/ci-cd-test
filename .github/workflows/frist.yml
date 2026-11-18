@@ -1,4 +1,4 @@
-name: frist github action
+name: first github action
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  frist-job:
+  first-job:
     runs-on: ubuntu-latest
 
     steps:
